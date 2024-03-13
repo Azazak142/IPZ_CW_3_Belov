@@ -13,7 +13,6 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
-import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Text
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
@@ -72,9 +71,10 @@ fun TipItem(tip: Tip) {
                 .fillMaxWidth(),
             contentScale = ContentScale.Crop
         )
-        Text(text = tip.desc, style = MaterialTheme.typography.bodyLarge)
         Spacer(modifier = Modifier.height(16.dp))
-        
+        Text(text = tip.desc, style = MaterialTheme.typography.bodyLarge)
+
+
     }
 }
 
